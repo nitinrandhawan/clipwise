@@ -23,12 +23,16 @@ const Pagination = () => {
   };
 
   const handlePrevious = () => {
+    console.log('cliked');
+    
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
   };
 
   const handlePageClick = (pageNumber) => {
+  
+    
     setCurrentPage(pageNumber);
   };
 
@@ -38,7 +42,7 @@ const Pagination = () => {
 
 
     <>
-<div className="flex flex-col items-center">
+<div className="flex flex-col items-center  ">
   <div className='bg-white rounded-[3rem] w-[31rem] h-[31rem] flex items-center flex-col justify-evenly relative overflow-hidden shadow-around hover:scale-95 duration-500 max-md:w-[27rem] max-md:h-[27rem] max-md:scale-90 max-sm:w-[23rem] max-sm:h-[23rem] max-sm:scale-75'>
     <div className='bg-[#8A93E5] px-6 py-[0.6rem] text-white top-[89px] left-0 absolute rounded-r-md'>
       New lot

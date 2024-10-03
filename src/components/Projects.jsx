@@ -21,7 +21,7 @@ useEffect(() => {
 }, []);
   return (
     <div className="h-auto ">
-      <div className="pb-16  py-12 flex flex-col items-center justify-center gap-6">
+      <div className="pb-16  py-12 pt-16 flex flex-col items-center justify-center gap-6">
         <h1 className="text-5xl   font-bold text-[#215365] ">All product</h1>
         <hr className="w-20 opacity-30 bg-gray-400 h-1 text-center" />
       </div>

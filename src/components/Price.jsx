@@ -42,7 +42,7 @@ function Price() {
           </div>
         </div>
        <div className="flex justify-center items-center  ml-14 w-ful relative max-md:scale-75 max-sm:scale-50">
-  <div className="bg-white absolute rounded-full w-[35rem] h-[35rem] shadow-around2 flex items-center justify-center z-50 right-[30px]" data-aos="zoom-in-down"  data-aos-offset="450">
+  <div className="bg-white absolute rounded-full w-[35rem] h-[35rem] shadow-around2 flex items-center justify-center z-50 right-[30px]" data-aos="zoom-in-down"  data-aos-offset="400">
     <div className="bg-white rounded-full w-[22rem] h-[22rem] flex items-center flex-col justify-evenly absolute overflow-hidden shadow-md z-50   ">
       <img
         src={image}

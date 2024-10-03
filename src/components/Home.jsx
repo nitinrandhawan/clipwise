@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import Pagination from './Pagination'
-
+import wavyefffect from '../Assests/Images/vector1.png'
 function Home() {
  
   return (
-    <div className='h-screen bg-gradient-to-tl from-[#6cb2fe]  via-[#77e0f3] via-70% to-[#d7a1b9] to-100% sm:h-full max-sm:h-full'>
+    <div className='h-[115vh]   bg-cover bg-fixed bg-center  max-lg:h-full overflow-hidden relative' style={{ backgroundImage: `url('../src/Assests/Images/background-img.png')` }}>
   <Navbar/>
-  <div className="flex justify-between items-center px-16 w-full h-[calc(100vh-96px)] max-lg:flex-col max-lg:justify-around max-lg:h-full max-lg:gap-5">
+  <div className='absolute bottom-[-8px] z-0'>
+    <img src={wavyefffect} alt="" className='relative bottom-0 w-screen  ' />
+  </div>
+  <div className="flex justify-between items-center px-16 w-full h-[calc(100vh-96px)] max-lg:flex-col max-lg:justify-around max-lg:h-full max-lg:gap-5  max-md:h-auto max-md:gap-20 z-50">
     <div className='flex flex-col gap-2 text-white animate-fadeinleft opacity-0'>
       
 <span className='text-[2.6rem] relative top-5 max-sm:text-2xl'>Welcome to</span>
@@ -28,11 +31,12 @@ function Home() {
     </div>
     <div>
 
-<div className='animate-fadeinright opacity-0'>
+<div className='animate-fadeinright opacity-0 z-50 relative'>
   <Pagination/>
 </div>
     </div>
   </div>
+  
     </div>
   )
 }
